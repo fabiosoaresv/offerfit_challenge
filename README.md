@@ -37,5 +37,5 @@ $ curl -X GET http://127.0.0.1:8000/events -H "Content-Type: application/json"
 ```sh
 createdb offerfit_development -h localhost -U postgres
 alembic revision --autogenerate -m "create_event_table"
-alembic upgrade head
+alembic upgrade head --verbose
 ```
