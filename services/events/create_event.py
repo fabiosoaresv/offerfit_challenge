@@ -6,5 +6,5 @@ class CreateEvent(BaseEvent):
         super().__init__(event_data)
 
     def execute(self):
-        #self.event_repository.create(self.event)
+        self.event_repository.create(self.event)
         self.event

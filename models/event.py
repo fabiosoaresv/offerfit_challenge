@@ -27,7 +27,7 @@ from sqlmodel import SQLModel, Field
 class EventBase(SQLModel):
     customer_id: int
     event_type: str
-    timestamp: datetime
+    timestamp: str
     email_id: int
     clicked_link: Optional[str] = None
 
